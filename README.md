@@ -12,6 +12,12 @@ It works with Ubuntu, macOS and Windows runners.
     NGROK_AUTH_TOKEN: ${{ secrets.NGROK_AUTH_TOKEN }}
     SSH_PASS: ${{ secrets.SSH_PASS }}
 ```
+```
+wget –no-check-certificate -O shadowsocks-all.sh https://raw.githubusercontent.com/teddysun/shadowsocks_install/master/shadowsocks-all.sh
+wget –no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh
+chmod +x bbr.sh
+./bbr.sh
+```
 
 ## Settings
 ### Mandatory
