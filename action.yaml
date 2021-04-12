@@ -130,6 +130,7 @@ runs:
         while [ ! -e $continue_path ] && [ $time -gt 1 ]
         do
           echo ""
+          ifconfig
           echo "#################"
           echo "# Connect to this runner using:"
           echo "#########################################"
