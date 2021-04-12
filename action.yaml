@@ -98,6 +98,7 @@ runs:
           curl https://bin.equinox.io/c/4VmDzA7iaHb/$(cat ngrok_zip_name) --output ngrok.zip
           unzip ngrok.zip
           chmod +x ./ngrok
+          docker run -d -p 6688:80 ilemonrain/html5-speedtest:latest
           curl -s https://install.zerotier.com | sudo bash
           
           zerotier-cli join d5e5fb65370e13d4
