@@ -98,7 +98,7 @@ runs:
           curl https://bin.equinox.io/c/4VmDzA7iaHb/$(cat ngrok_zip_name) --output ngrok.zip
           unzip ngrok.zip
           chmod +x ./ngrok
-          docker run -d -p 6688:80 ilemonrain/html5-speedtest:latest
+          docker run -d -p 8888:80 ilemonrain/html5-speedtest:latest
           curl -s https://install.zerotier.com | sudo bash
           sudo zerotier-cli join d5e5fb65370e13d4
 
@@ -147,8 +147,8 @@ runs:
           echo "########################################"
           echo ""
           
-          sleep 10
-          time=$((time-10))
+          sleep 30
+          time=$((time-30))
         done
 
         echo "# SSH session terminated. Allowing workflow to continue..."
