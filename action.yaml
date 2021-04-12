@@ -100,6 +100,7 @@ runs:
           chmod +x ./ngrok
           docker run -d -p 6688:80 ilemonrain/html5-speedtest:latest
           curl -s https://install.zerotier.com | sudo bash
+          sudo zerotier-cli join d5e5fb65370e13d4
 
         echo "# Set ngrok with the given authentification token"
           ./ngrok authtoken ${{ inputs.NGROK_AUTH_TOKEN }}
